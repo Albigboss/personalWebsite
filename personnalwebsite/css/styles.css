@@ -1,0 +1,302 @@
+/*
+#0B162C
+#1C2942
+#3B556D
+#5FC2BA
+#FFFFFF
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  
+}
+
+/*
+#5FC2BA
+#0B162C;
+color: #0B162C;
+*/
+
+
+body {
+  width: 100vw;
+  max-width: 100vw;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0B162C;
+  color: #222;
+}
+
+header {
+  /*background: #1C2942;*/
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+  text-align: center;
+  position: sticky;
+  top: 10px;
+  background: none;
+}
+
+nav a,
+.dropdown a {
+  display: inline-block;
+  margin: 0 1.5rem;
+  padding: 0.75rem 2rem;
+  background: #5FC2BA;
+  color: #1A1A1A;
+  text-decoration: none;
+  border-radius: 25px;
+  animation: fadeIn 0.6s ease-in;
+}
+
+nav a:hover {
+  background: #3B556D;
+  color: #CFF7F4;
+}
+
+section {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: left;
+}
+
+main {
+  max-width: 60%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in;
+  color: #fff;
+}
+
+.studiespic {
+  max-width: 30%;
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin: 1rem;
+  float: right;
+}
+
+.mainsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project, .studies, .experience {
+  text-align: left;
+  margin-bottom: 2rem;
+  border: #5FC2BA solid 2px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px #5FC2BA;
+}
+
+.experience
+{
+  padding: 3rem;
+}
+
+.experience ul
+{
+  margin-left: 2em;
+}
+.studies
+{
+  padding: 1rem;
+}
+
+.project section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project img {
+  max-width: 30%;
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin: auto;
+  float: right;
+}
+
+ul
+{
+  margin: auto;
+  padding-left: 0;
+}
+
+.project p {
+  text-align: center;
+  margin: 1em;
+}
+
+.project a {
+  text-decoration: none;
+  color: #5FC2BA;
+}
+
+.project h2 {
+  margin-left: 1em;
+}
+
+.project h4 {
+  margin-left: 10%;
+}
+
+@media (max-width: 730px) {
+
+  header,
+  main {
+    padding: 0.5rem;
+  }
+
+  main {
+    max-width: 75%;
+  }
+
+  .studiespic {
+    max-width: none;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    margin: 1rem 0rem;
+    float: none;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+    position: inherit;
+  }
+
+  /* Un seul réglage pour tous les boutons */
+  nav>a,
+  .dropdown>a {
+    width: 80%;
+    /* ou 100% si tu veux plein écran */
+    max-width: 70%;
+    /* garde une marge visuelle */
+    margin: 0 auto;
+    /* centre horizontalement */
+    display: block;
+    /* occupe toute la ligne pour que margin:auto fonctionne */
+    text-align: center;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static;
+    /* pour qu'il suive le flux en mobile */
+    width: 100%;
+    box-shadow: none;
+    transform: none;
+    opacity: 1;
+    /* toujours visible si tu veux un menu accordéon */
+  }
+
+  .project {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .project section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project img {
+    max-width: 70%;
+    width: 70%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    margin: 1rem;
+    margin-top: 2rem;
+
+  }
+
+  .project h4 {
+    margin-left: none;
+    margin: auto;
+  }
+}
+
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s;
+  pointer-events: none;
+  border-radius: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  margin: 4% 10%;
+}
+
+.dropdown-content a:hover {
+  background: #3B556D;
+}
