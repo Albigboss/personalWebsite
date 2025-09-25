@@ -96,6 +96,7 @@ main {
 .experiencepic
 {
   float:right;
+  max-width: 20%;
 }
 
 .mainsection {
@@ -306,3 +307,4 @@ ul
   background: #3B556D;
 
 }
+
