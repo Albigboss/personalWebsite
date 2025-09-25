@@ -192,6 +192,7 @@ ul
     max-width: 90%;
     margin: auto;
     position: inherit;
+    margin-top: 2em;
   }
 
   /* Un seul réglage pour tous les boutons */
