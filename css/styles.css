@@ -93,6 +93,11 @@ main {
   float: right;
 }
 
+.experiencepic
+{
+  float:right;
+}
+
 .mainsection {
   display: flex;
   flex-direction: column;
@@ -299,4 +304,5 @@ ul
 
 .dropdown-content a:hover {
   background: #3B556D;
+
 }
