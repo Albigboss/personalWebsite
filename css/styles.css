@@ -96,7 +96,8 @@ main {
 .experiencepic
 {
   float:right;
-  max-width: 20%;
+  max-width: 200px;
+  border-radius: 8px;
 }
 
 .mainsection {
@@ -117,6 +118,8 @@ main {
 {
   padding: 3rem;
 }
+
+
 
 .experience ul
 {
@@ -198,6 +201,7 @@ ul
     max-width: 90%;
     margin: auto;
     position: inherit;
+    margin-top: 2em;
   }
 
   /* Un seul réglage pour tous les boutons */
